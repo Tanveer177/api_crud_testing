@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('participants', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique()->nullable();
-            $table->string('phone')->nullable();
+            $table->string('participant_name');
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('categroy_id')->nullable();
+            $table->string('details')->nullable();
             $table->timestamps();
         });
     }

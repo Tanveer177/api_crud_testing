@@ -1,6 +1,3 @@
-<div>
-    <!-- Happiness is not something readymade. It comes from your own actions. - Dalai Lama -->
-</div>
 <form method="POST" action="{{ route('register') }}">
     @csrf
     <input type="text" name="name" placeholder="Name">
